@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{% block title%}{% endblock%}</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/slider-img.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+        <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/project_style.css' %}"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+
+        <!-- ChatBot -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.convform.css' %}">
+        <script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.convform.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/scrollreveal.min.js' %}"></script>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top" style="width: 100%; overflow-x: hidden; overflow-y: scroll;">
+            <!-- Navigation-->
+            <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">  
+                        <li class="sidebar-brand"><a href="#page-top">{{ side }}</a></li>
+                        <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                        <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                        <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                        <li class="sidebar-nav-item"><a href="#portfolio">project</a></li>
+                        <li class="sidebar-nav-item"><a href="#contact">Developers</a></li> 
+                        {% comment %}
+                        <!-- <li class="sidebar-nav-item"><a href="{% url 'project:dahsboard' %}">Dashboard</a></li>  -->
+                        {% endcomment %}
+                </ul>
+            </nav>
+                <!-- Header-->
+                <header class="main-folder container-fluid text-center">
+                    <div class="slide-img row gx-4 gx-lg-5 justify-content-center listing">
+                        <img src="../../static/images/app-development-courses.png" alt="" class="col-lg-12" id="slider">
+                    </div>
+                    <div class="slider-overlay">
+                        <div class="slider-in-overlay">
+                            <h1 class="slider-h1 col-lg-10">Welcome to Mjobi world</h1>
+                            <h3 class="slider-h3">Let's Build your Dream Application</h3>
+                        </div>
+                    </div>
+                </header>
+                <!-- About-->
+                <section class="content-section bg-light" id="about">
+                    <div class="container px-4 px-lg-5 text-center">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-10">
+                                <h2>Mjobi is the best developer group that focus on building production and scalable application for individual and company!</h2>
+                                  <p class="lead mb-5">
+                                  the purpose of Mjobi is to make people life easy and soft .by designing and developing a masterclass application that will present our customer inovation and idea in a lucrative way
+                                </p>
+                                <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Services-->
+                <section class="content-section bg-primary text-white text-center" id="services">
+                    <div class="container px-4 px-lg-5">
+                        <div class="content-section-heading">
+                            <h3 class="text-secondary mb-0">Services</h3>
+                            <h2 class="mb-5">What We Offer</h2>
+                        </div>
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                                <h4><strong>WEB3</strong></h4>
+                                <p class="text-faded mb-0">utilizing blockchain technology</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                                <h4><strong>web Development</strong></h4>
+                                <p class="text-faded mb-0">building of web technolgy </p>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                                <h4><strong>Trading bot</strong></h4>
+                                <p class="text-faded mb-0">
+                                    futures Trading
+                                    <i class="fas fa-heart"></i>
+                                    spot Trading
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                                <h4><strong>ARTIFICIAL INTELLIGENCE</strong></h4>
+                                <p class="text-faded mb-0">
+                                    machine learning
+                                </p>
+                                <p class="text-faded mb-0">
+                                    data analysis
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                                <h4><strong>App Development</strong></h4>
+                                <p class="text-faded mb-0">developing mobile app</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Callout-->
+                <section class="callout">
+                    <div class="container px-4 px-lg-5 text-center">
+                        <h2 class="mx-auto mb-5">
+                            Welcome to
+                            <em>your</em>
+                            next website!
+                        </h2>
+                        {% block comment %}
+                            <!--<a class="btn btn-primary btn-xl" href="{% url 'project:user_login' %}">Login Now!</a>-->
+                        {% endblock %}
+                    </div>
+        {% block content %}
+        {% endblock %}
+                </div>
+        <div class="chat_icon chat_icon_one">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+        </div>
+
+        <div class="chat_icon_sec chat_icon_two">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </div>
+        
+        <div class="chat_box">
+            <div class="my-conv-form-wrapper">
+                <form  method="post" class="hidden" id="chat-form" >
+        
+              <select style="display:flex;" data-conv-question="Hello! Welcome to jobi How can we help" name="category">
+                <option style="display:flex;" value="WebDevelopment">software Development ?</option>
+                <option value="DigitalMarketing">project building ?</option>
+           
+              </select>
+        
+              <div data-conv-fork="category">
+                <div data-conv-case="WebDevelopment">
+                  <input type="text" name="projectName" data-conv-question="Please, tell me your software name">    
+                </div>
+                <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+                  <input type="text" name="companyName" data-conv-question="Please, enter your project name"> 
+                </div>
+              </div>
+        
+              <input type="text" name="name" data-conv-question="Please, Enter your name">
+        
+              <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+        
+              <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+              <input type="text" name="other" data-conv-question="Explain what you need mjobi to help you with">
+
+              <select data-conv-question="Please follow the step to create an account for immediate reply" name="account">
+                <option value="yes">yes</option>
+                <option value="no">No</option>
+              </select>
+              
+              <div data-conv-fork="account">
+                <div data-conv-case="yes">
+                    <input type="text" name="username" data-conv-question="Please, enter your username">    
+                  </div>
+                <div data-conv-case="yes">
+                  <input type="text" name="password" data-conv-question="Please, enter your password">    
+                </div>
+                
+                <div data-conv-case="yes">
+                    <input type="text" data-conv-question=" thank you  {name}, <br>for visiting mjobi. your account has been created with {username} and password {password} " data-no-answer="true">   
+                  </div>
+                <div data-conv-case="no">
+                    <input type="text" data-conv-question=" thank you  {name}, <br>for visiting mjobi." data-no-answer="true">
+                </div>
+              </div>
+              <select data-conv-question="Please click submit to forward your details to an agent">
+                <option value="Yes">submit</option>
+              </select>
+        
+              </form>
+            </div>
+        </div>
+        <!-- ChatBot end -->
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <!-- <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/abiola-oladunjoye-8b61351a7/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul> -->
+                <p class="text-muted small mb-0">Copyright &copy; JOBI 2022</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <script src="{% static 'js/src.081681fd.js' %}"></script>
+        <script>
+            var formData = new FormData();
+           
+              function submitform() {
+                alert("it preesed")
+                formData.append('username', $('#username').val())
+                formData.append('password', $('#password').val())
+                formData.append('name', $('#name').val())
+                formData.append('email', $('#email').val())
+                formData.append('csrfmiddlewaretoken', '{{ csrf_token }}')
+                  $.ajax({
+                      type: 'POST',
+                      url: '{% url "project:chatlogin" %}',
+                      data: formData,
+                      cache: false,
+                      processData: false,
+                      contentType: false,
+                      enctype: 'multipart/form-data',
+                      success: function (){
+                          alert('The user has been created!')
+                      },
+                      error: function(xhr, errmsg, err) {
+                          console.log(xhr.status + ":" + xhr.responseText)
+                      }
+                  })
+              }
+        </script> 
+        <script type="text/javascript">
+            const slider = document.getElementById('slider');
+
+            const images = new Array(
+                '../../static/images/crypto-trading-bot.jpeg',
+                '../../static/images/crypto-trading-bot.png',
+                '../../static/images/crypto-trading-bot.jpeg',
+                '../../static/images/AI-pic-1.jpg',
+                '../../static/images/app-development-courses.png'
+            )
+            let i = 0;
+            const sliderfunc = function(){
+                if(i > images.length -1){
+                    i = 0;
+                }
+                slider.src = images[i];
+                i++;
+                setTimeout('sliderfunc()',4000);
+            }
+            window.addEventListener('load', function () {
+                sliderfunc();
+            })
+
+            // setTimeout(() =>{
+            //     portfolioList = document.querySelectorAll('.portfolio-box');
+            //     portfolioList.forEach(function(portfolioPic) {
+            //         portfolioPic.addEventListener('click',function(){
+            //             bg = this.style.backgroundImage;
+            //             document.getElementById('port_pop_pic_bg').classList.add("active")
+            //             document.getElementById('port_pop_pic').style.backgroundImage = bg
+            //             document.getElementById('port_pop_pic').classList.add("active")
+            //         });	
+            //     })
+            //     document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+            //             document.getElementById('port_pop_pic_bg').classList.remove("active")
+            //             document.getElementById('port_pop_pic').classList.remove("active")
+            //     })}, 2000)
+
+            
+        </script>
+
+
+    </body>
+</html>
