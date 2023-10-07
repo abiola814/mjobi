@@ -1,4 +1,3 @@
-Absolutely! I'll combine the provided code and information into a README format.
 
 ---
 
